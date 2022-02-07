@@ -33,10 +33,8 @@ public class SprialProgram {
             endColumn--;
         	
         	//right to left
-        	for(int i = endColumn; i >= startColumn; i--) {
-                
-        		matrix[endRow][i]=currentNumber;
-        		currentNumber++;
+        	for(int i = endColumn; i >= startColumn; i--) { 
+        		matrix[endRow][i]=currentNumber++;
         	}
         	endRow--;
         	
@@ -49,11 +47,9 @@ public class SprialProgram {
 		}
 		
 		for(int i = 0;i<input;i++) {
-			
 			for(int j = 0; j < input; j++) {
 				System.out.printf("%4d", matrix[i][j]);
 			}
-			
 			System.out.println();
 		}
 
